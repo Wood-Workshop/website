@@ -1,0 +1,38 @@
+name: Design Task
+description: Задача на дизайн
+title: "[Design] "
+labels: ["design"]
+body:
+  - type: input
+    id: what
+    attributes:
+      label: Что нужно задизайнить
+      placeholder: Например: карточка товара
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Требования
+      placeholder: |
+        - ...
+        - ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Результат
+      placeholder: |
+        - Figma
+        - компоненты
+    validations:
+      required: true
+
+  - type: input
+    id: figma
+    attributes:
+      label: Figma ссылка
+      placeholder: https://...
