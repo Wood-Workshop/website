@@ -1,0 +1,51 @@
+name: Feature
+description: Новая функциональность
+title: "[Feature] "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Опиши задачу максимально понятно
+
+  - type: input
+    id: summary
+    attributes:
+      label: Краткое описание
+      placeholder: Что нужно сделать?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Контекст
+      placeholder: Зачем это нужно?
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope (что входит)
+      placeholder: |
+        - ...
+        - ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Критерии приёмки
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: input
+    id: figma
+    attributes:
+      label: Figma (если есть)
+      placeholder: https://...
